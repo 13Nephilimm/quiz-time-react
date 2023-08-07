@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #b8b8ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app h1 {
+  font-weight: 700;
+  color: #f8f7ff;
+  font-size: 64px;
+}
+
+.menu,
+.quiz,
+.end-screen {
+  margin-top: 24px;
+  width: 600px;
+  height: 600px;
+  border-radius: 16px;
+  background-color: #9381ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu button,
+.quiz .next-btn {
+  width: 300px;
+  height: 50px;
+  margin: 16px;
+  border: none;
+  border-radius: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #f8f7ff;
+  color: #9381ff;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.menu button:hover,
+.quiz .next-btn:hover {
+  background-color: #b8b8ff;
+  color: #f8f7ff;
+}
+
+.options {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.options button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #f8f7ff;
+  color: #9381ff;
+  transition: all 0.3s;
+  font-weight: 500;
+  margin: 8px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options button:hover,
+.options button:focus,
+.options button:active {
+  background-color: #b8b8ff;
+  color: #f8f7ff;
+}
+
+.quiz h1 {
+  padding: 48px;
+  font-size: 36px;
+}
+
+.end-screen h1 {
+  font-size: 48px;
+  padding: 24px;
+}
+
+.end-screen p {
+  color: #f8f7ff;
+  font-weight: 700;
+  padding: 24px;
+  font-size: 24px;
+}
+
+.end-screen button {
+  width: 70%;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #f8f7ff;
+  color: #9381ff;
+  transition: all 0.3s;
+  font-weight: 500;
+  margin: 8px;
+  border: none;
+  font-size: 24px;
+}
+
+.end-screen button:hover {
+  background-color: #b8b8ff;
+  color: #f8f7ff;
 }
